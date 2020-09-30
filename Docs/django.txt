@@ -1,0 +1,89 @@
+
+TIPS:
+- put code in directory outside document root, such as home/mycode
+- this is done to ensure nobody can view your code
+-
+
+CLI:
+- check django version
+python -m django --version
+
+- start new django project
+django-admin startproject project_name
+
+- run project on local server
+- run project on specific port
+python manage.py runserver
+python manage.py runserver 8080
+
+- create new app within project
+python manage.py startapp app_name
+
+ADMIN DASHBOARD:
+- querying
+
+
+DATABASE:
+- open python
+python manage.py shell
+
+- example shell
+>>> from main.models import Item, ToDoList
+>>> t = ToDoList(name="andrew's list")
+>>> t.save()
+>>> ToDoList.objects.all()
+<QuerySet [<ToDoList: andrew's list>]>
+>>> ToDoList.objects.get(id=1)
+<ToDoList: andrew's list>
+>>> ToDoList.objects.get(name="andrew's list")
+<ToDoList: andrew's list>
+
+- view all items
+>>> t.item_set.all()
+
+>>> t = ToDoList.objects
+>>> t.all
+<bound method BaseManager.all of <django.db.models.manager.Manager object at 0x10904bd60>>
+>>> t.all()
+<QuerySet [<ToDoList: andrew's list>]>
+
+- filtering query
+>>> t.filter(name__startswith="andrew")
+<QuerySet [<ToDoList: andrew's list>]>
+>>> t.filter(id=1)
+<QuerySet [<ToDoList: andrew's list>]>
+>>> t.filter(id=2)
+<QuerySet []>
+
+- deleting objects
+>>> del_object = t.get(id=1)
+>>> del_object.delete()
+(2, {'main.Item': 1, 'main.ToDoList': 1})
+>>> t.all()
+<QuerySet []>
+
+DEPLOYMENT:
+- install gunicorn
+pip/conda install gunicorn
+
+- create Profile in root and write
+web: gunicorn django_project_name_ex.wsgi
+
+- pipe pip installations into requirements file
+- OR with conda
+pip freeze > requirements.txt
+conda list --export > requirements.txt
+
+- stage migrations for an app
+- apply migrations
+python manage.py makemigrations app_name
+python manage.py migrate
+
+
+MODEL CHANGES:
+- change your models (in models.py).
+- create migrations for those changes
+- apply those changes to the database
+python manage.py makemigrations 
+python manage.py migrate to 
+

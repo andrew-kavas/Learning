@@ -1,0 +1,49 @@
+
+TIPS:
+- 
+
+CLI:
+- make virtual environment
+mkvirtual env env_name
+
+- initialize current directory as git repo
+- stage all files for push
+- commit message
+- push to repo
+git init
+git add .
+git commit -m 'my commit message'
+git push origin master
+
+- view remote repos
+- add remote repository
+- clone existing directory
+git remote -v
+git remote add origin https://github.com/ex_user/ex_repo.git
+git clone ssh://john@example.com/path/to/my-project.git
+
+- create a branch
+- switch branch
+- both simultaneously
+git branch branch_name
+git checkout branch_name
+git checkout -b branch_name
+
+- merge branches
+git checkout master
+git commit -m "merge branches"
+git merge staging
+git commit origin master
+
+- list project branches
+- push to repo branch
+git branch -a
+git push origin branch_name
+
+- Update the URL of the remote repo (instead of creating a new one)
+git remote set-url origin
+
+
+
+
+

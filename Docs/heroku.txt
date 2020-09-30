@@ -1,0 +1,70 @@
+
+TIPS:
+- 
+
+CLI:
+- check version
+heroku --version
+
+- login to heroku
+heroku login -i
+
+- in local dir, create new project folder
+mkdir herokunode
+cd herokunode
+
+- install dependencies
+yarn add express
+
+- files to create inside root directory:
+- server.js [define app logic]
+- .env [define the application port (ie PORT = 8081)]
+- index.html [loads environment variables]
+
+
+
+- create remote heroku repo
+- push to heroku
+heroku create app_name
+git push heroku master
+
+- to rename app
+heroku apps:rename new-name --app old-name
+# run on local port
+
+# create procfile (define the dynos setting)
+# log into heroku on cli
+heroku login
+
+# initialize your project to git repo
+git init
+
+# create app (w random name)
+heroku create
+
+# add all the changes to the Heroku platform
+git add .
+git commit -m "commit message"
+
+# open live app
+heroku open
+
+- view app logs
+- debugging
+heroku logs
+heroku logs --tail
+
+# push changes to master app
+git push heroku master
+
+- to run commands on heroku machine:
+- either run bash shell on heroku machine (dyno)
+heroku run bash
+- or use:
+heroku run ____
+(ex) heroku run python manage.py migrate
+(ex2) heroku run 
+
+- to edit heroku env variables
+heroku config:set ________
+

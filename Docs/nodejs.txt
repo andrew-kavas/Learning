@@ -1,0 +1,41 @@
+
+TIPS:
+- add .gitignore in project root with:
+node_modules
+.DS_store
+/*.env
+
+CLI:
+- within project root, start node package manager
+- check version
+npm init --yes
+node -v
+
+- set runtime config to automatically update dependencies
+npm config set save=true
+npm config set save-exact=true
+cat ~/.npmrc
+
+- install dependencies
+npm install express
+npm install ejs
+
+- add the following files to the project root
+public/
+public/css/
+public/css/style.css
+views/
+views/index.ejs
+server.js
+.gitignore
+
+- fill these files in (ex: https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku)
+
+3)
+- initialize git, stage files, and commit
+- create git repo, add remote origin, and push changes
+
+TIPS:
+- run project locally
+node server
+

@@ -1,0 +1,10 @@
+
+- create virtual env
+mkvirtualenv env_name
+
+- list virtual environments
+- activate virtual environment
+workon
+workon venv_name
+
+
