@@ -1,6 +1,11 @@
 
-TIPS:
-- 
+# pulling
+git fetch
+git status
+git pull origin main
+
+# set default branch to main
+git branch -m master main && git branch -u origin/main
 
 CLI:
 - make virtual environment
