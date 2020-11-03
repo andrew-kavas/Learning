@@ -46,8 +46,12 @@ async function getText(source) {
   // todo -> encode/decode methods? utf8/ascii?
 
   // find all text data and remove white spaces
-  var page_text = $.text().trim().replace(/\s+/g, " ");
-  page_text = he.decode(page_text, HE_OPTIONS);
+  // var page_text = $.text().trim().replace(/\s+/g, " ");
+  // var page_text = $.html();
+  
+  var page_text = he.decode($.html(), HE_OPTIONS);
+  page_text = page_text.trim().replace(/\s+/g, " ");
+
 
   return page_text;
 }
