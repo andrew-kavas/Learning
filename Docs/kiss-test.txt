@@ -1,0 +1,24 @@
+KISS TEST:
+# install
+npm install --save-dev kiss-test
+
+# config
+-> in package.json
+"scripts": {
+  "test": "kiss-test 'test/**/*.test.js'"
+},
+
+# adding tests (inside a .test.js file)
+import { strict as assert } from 'assert';
+export default {
+  test1: () => {
+      assert.equal(value1, value2)
+  },
+  test2: ...
+}
+
+run:
+npm test
+
+
+

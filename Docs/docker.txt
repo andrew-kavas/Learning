@@ -19,6 +19,12 @@ Running on http://localhost:8080
 # Enter the container
 $ docker exec -it <container id> /bin/bash
 
+Stop all docker containers:
+docker stop $(docker ps -aq)
+
+# delete all stopped docker containers
+docker rm $(docker ps -a -q)
+
 HELP:
 https://docs.docker.com/engine/docker-overview/
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/

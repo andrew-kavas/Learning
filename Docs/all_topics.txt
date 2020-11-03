@@ -1,0 +1,105 @@
+
+https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/
+
+Supervised
+Semisupervised
+Unsupervised
+
+
+REGRESSION:
+ordinary least squares regression (OLSR)
+linear regression
+logistic regression
+stepwise regression
+multivariate adaptive regression splines (MARS)
+locally estimated scatterplot smoothing (LOESS)
+
+
+INSTANCE-BASED:
+k-nearest neighbor (kNN)
+learning vector quantization (LVQ)
+self-organizing map (SOM)
+locally weighted learning (LWL)
+
+
+REGULARIZATION:
+ridge regression
+least absolute shrinkage and selection operator (LASSO
+elastic net
+least-angle regression (LARS)
+
+
+DECISION TREE:
+classification and regression tree (CART)
+iterative dichotomiser 3 (ID3)
+c4.5 and c5.0 (powerful!)
+chi-squared automatic interaction detection (CHAID)
+decision stump
+m5
+conditional decision trees
+
+
+BAYESIAN:
+naive bayes
+gaussian naive bayes
+averaged ope-dependence estimators (AODE)
+bayesian belief network
+bayesian network
+
+
+CLUSTERING:
+k-Means
+k-Medians
+expectation maximisation (EM)
+hierarchical clustering
+
+
+ASSOCIATION RULE LEARNING
+apriori algorithm
+eclat algorithm
+
+
+ARTIFICIAL NEURAL NETWORKS
+perceptron
+backpPropagation
+hopfield network
+radial basis function network (RBFN)
+
+
+DEEP LEARNING
+deep boltzmann machine (DBM)
+deep belief networks (DBN)
+convolutional neural network (CNN)
+stacked auto-encoders
+
+
+DIMENSIONALITY  REDUCTION
+principal component analysis (PCA)
+principal component regression (PCR)
+partial least squares regression (PLSR)
+sammon mapping
+multidimensional scaling (MDS)
+projection pursuit
+linear discriminant analysis (LDA)
+mixture discriminant analysis (MDA)
+quadratic discriminant analysis (QDA)
+flexible discriminant analysis (FDA)
+
+
+ENSEMBLE
+boosting
+bootstrapped aggregation (bagging)
+AdaBoost
+stacked generalization (blending)
+gradient boosting machines (GBM)
+gradient boosted regression trees (GBRT)
+random forest
+
+
+OTHER
+computational intelligence (evolutionary algorithms, genetic, etc.)
+computer vision (CV)
+natural language processing (NLP)
+recommender systems
+reinforcement learning
+graphical models
