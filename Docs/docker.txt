@@ -4,6 +4,7 @@
 docker start container_name
 
 docker build -t <your username>/node-web-app .
+docker build -t 410ventures/profiler-node .
 
 docker run -p 49160:8080 -d <your username>/node-web-app
 

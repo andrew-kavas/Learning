@@ -34,6 +34,16 @@ git branch branch_name
 git checkout branch_name
 git checkout -b branch_name
 
+- rebase branch to main
+git checkout branch_name
+git rebase main
+
+- stash changes to apply after pulling
+git fetch
+git stash
+git pull
+git stash pop
+
 - merge branches
 git checkout master
 git commit -m "merge branches"
